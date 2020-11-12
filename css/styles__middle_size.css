@@ -1,0 +1,449 @@
+/* первый блок- хедер */
+.header{
+    height: 430px;
+    padding: 0 10%;
+}
+.header *, .header p{
+    max-width: 100%;
+    font-size: 80%;
+    line-height: 80%;
+}
+.header__top_logoMain{
+    font-size: 15px;
+}
+.header__top_logo{
+    position: relative;
+}
+.header__top_logoMain ~ .header__top_border:before,
+.header__top_logoMain ~ .header__top_border:after{
+    top: -1.6em; 
+    height: 1px; 
+}
+.header__top_logoMain ~ .header__top_border:after{
+    top: auto; 
+    bottom: 1.6em; 
+}
+.header__top_logoMain ~ .header__top_border i:before,
+.header__top_logoMain ~ .header__top_border i:after{
+    top: -2em; 
+    width: 1px;  
+}
+.header__top_logoMain ~ .header__top_border i:after{
+    top: auto; 
+    bottom: 2em;
+}
+.header__top_logoMenu ul li{
+    margin-right: 30px;
+}
+.header__top_logoMenu ul :last-child{
+    margin-right: 0px;
+}
+.header__top_logoMenu ul a{
+    line-height: 10px;
+}
+ul li a::after {
+    margin-top: 2px;
+    height: 1.5px;
+}
+.header__number_telephone{
+    width: 110px;
+}
+.header__number_telephone a{
+    font-size: 80%;
+    font-size: 10px;
+}
+.header__low_button{
+    max-width: 20%;
+    max-height: 40px;
+}
+.header__low_Pluses{
+    max-width: 34%;
+}
+.header__low_Pluses div{
+    max-width: 67px;
+    margin-left: 34px;
+    margin-right: 3px;
+    font-size: 9px;
+}
+.header__argument_one:before, .header__argument_two:before, .header__argument_two:before{
+    width: 30px;
+    background-size: contain;
+    left: -32px;
+}
+.header__argument_one:after, .header__argument_two:after, .header__argument_two:after{
+    width: 30px;
+    background-size: contain;
+    left: -34px;
+}
+.header__middle_img{
+    width: 31%;
+    background-size: contain;
+}
+.header__middle_img::after{
+    width: 80%;
+    background-size: contain;
+}
+.header__middle_block{
+    max-width: 80px;
+    max-height: 80px;
+    padding-top: 18.8px;
+    position: absolute;
+    margin-top: 19%;
+    right: 4%;
+    z-index: 100;
+}
+.header__middle_block:hover{
+    box-shadow: 0 0 0 14px  rgba(61, 155, 233, 0.3);
+    transition-duration: 1s;
+    cursor: pointer;
+    z-index: 1000;
+}
+.header__middle_button{
+    max-width: 42.4px;
+    max-height: 42.4px;
+    background-size: contain;
+}
+.header__middle_text{
+    margin-top: 50px;
+    font-size: 48px;
+    max-width: 405px;
+}
+.header__middle_text p {
+    margin-top: 8px;
+    font-size: 16px;
+}
+.header__low{
+    margin-top: 40px;
+}
+.header__low_Pluses{
+    margin-top: 62px;
+}
+.header__middle_img{
+    margin-top: 32px;
+}
+.header__middle_img::after{
+    margin-top: -25%;
+}
+/* модальное окно */
+.popup {
+    width: 350px;
+}
+.popur__label{
+    width: 100px;
+    font-size: 11px;
+    line-height: 11px;  
+}
+.popup__overlay {
+    width: 160%;
+    font-size: 15px;
+    line-height: 15px;
+}
+.popup__close span{
+    font-size: 22px;
+}
+.popur__input_button{
+    font-size: 11px;
+    line-height: 11px;
+    width: 30%;
+}
+/* Уведомление об отправки */
+.message__send{
+    font-size: 17px;
+}
+/* второй блок - начала майна(тела) */
+.main__how{
+    max-width: 884px;
+    max-height: 274px;
+    margin-top: 72px;
+    margin-bottom: 84px;
+}
+.main__how label{
+    line-height: 30px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.main__how_adv{
+    margin-top: 40px;
+}
+.main__how_advantage{
+    max-width: 312px;
+    margin-left: 80px;
+}
+.main__how_advantage :first-child{
+    margin-bottom: 12px;
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.main__how_advantage :last-child{
+    line-height: 17px;
+    font-size: 13px;
+}
+.main__how_adv .main__arg_one :first-child::before, .main__how_adv .main__arg_one :first-child::after{
+    line-height: 48px;
+    font-size: 40px;
+    left: -78px;
+    top: -6px;
+}
+.main__how_adv .main__arg_one :first-child::after{
+    left: -80px;
+}
+.main__how_adv .main__arg_two :first-child::before, .main__how_adv .main__arg_two :first-child::after{
+    line-height: 48px;
+    font-size: 40px;
+    left: -78px;
+    top: -6px;
+}
+.main__how_adv .main__arg_two :first-child::after{
+    left: -80px;
+}
+.main__how_adv .main__arg_three :first-child::before, .main__how_adv .main__arg_three :first-child::after{
+    line-height: 48px;
+    font-size: 40px;
+    left: -78px;
+    top: -6px;
+}
+.main__how_adv .main__arg_three :first-child::after{
+    left: -80px;
+}
+.main__how_adv .main__arg_four :first-child::before, .main__how_adv .main__arg_four :first-child::after{
+    line-height: 48px;
+    font-size: 40px;
+    left: -78px;
+    top: -6px;
+}
+.main__how_adv .main__arg_four :first-child::after{
+    left: -80px;
+}
+/* 3й блок-цены */
+.main__price{
+    max-width: 1044px;
+}
+.main__price_text label{
+    font-weight: 480;
+    line-height: 28px;
+    font-size: 24px;
+}
+.main__price_text p{
+    margin: 12px 0 48px;
+    line-height: 24px;
+    font-size: 20px;
+}
+/* внутренние дивы */
+.main__price_block div{
+    width: 336px;
+    padding: 64px 0;
+}
+/* содержимое внутренних дивов */
+.main__price_block  label{
+    line-height: 24px;
+    font-size: 20px;
+}
+.main__price_block  p{
+    line-height: 20px;
+    font-size: 13px;
+}
+.main__price_block div :nth-child(2){
+    margin: 48px 0 20px;
+}
+.main__price_block div :nth-child(4){
+    margin: 20px 0 51px;
+}
+.main__price_block div :nth-child(5){
+    line-height: 30px;
+    font-size: 24px;
+    margin-bottom: 43px;
+}
+.main__price_furgonButton, .main__price_gazelButton, .main__price_gazelBig_button{
+    line-height: 20px;
+    font-size: 16px;
+    width: 100%;
+    height: 40px;
+}
+/* автопарк */
+.main__autopark{
+    max-width: 804px;
+    margin: 82px auto 42px;
+}
+.main__autopark_img{
+    height: 363px;
+    width: 463px;
+    background-size: contain;
+    margin-top: -42%;
+    margin-left: 35%;
+}
+.slider{
+    padding: 0px 70px;
+}
+.slider .main__autopark_next {
+    right: 10px;
+}
+.slider .main__autopark_prev {
+    left: 10px;
+}
+.main__autopark_text label{
+    line-height: 30px;
+    font-size: 26px;
+}
+.main__autopark_text p{
+    line-height: 23px;
+    font-size: 20px;
+    margin: 12px 0 48px;
+}
+.main__autopark_type{
+    width: 512px;
+    font-size: 16px;
+}
+.main__autopark_type div{
+    line-height: 40px;
+    font-size: 16px;
+    width: 161px;
+    height: 40px;
+}
+.main__autopark_carText p{
+    line-height: 26px;
+    font-size: 20px;
+    margin: 88px 0 30px;
+}
+.main__autopark_carText ul{
+    margin-bottom: 28px;
+}
+.main__autopark_carText ul > li{
+    padding-left: 23px;
+    line-height: 17px;
+    font-size: 13px;
+    margin: 23px 0;
+}
+.main__avtopark_button{
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+}
+/* отзывы!!! */
+.main__respons{
+    height: auto;
+    padding: 80px;
+}
+.main__respons_label{
+    font-size: 26px;
+    margin-bottom: 47px;
+}
+.main__respons_block{
+    max-width: 1043px;
+    height: auto;
+    font-size: 13px;
+    line-height: 17px;
+}
+@media screen and (min-width: 651px) and (max-width: 1100px){
+    .main__respons_text{
+        max-width: 210px;
+    }
+    .main__respons_block{
+        max-width: 651px;
+    }
+    .main__respons_block div:not(.main__respons_block_last){
+        margin-right: 20px;
+    }
+}
+.main__respons_name{
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+.main__respons_data::after{
+    padding-left: 8px; 
+}
+.main__respons_text{
+    margin: 15px 0;
+    max-width: 336px;
+}
+.main__respons_button{
+    font-size: 16px;
+    width: 200px;
+    height: 40px;
+    margin-top: 57px;
+}
+/* заказ обратного звонка */
+.main__booking{
+    max-height: 151px;
+    margin: 100px auto;
+    max-width: 802px;
+    font-size: 13px;
+    line-height: 17px;
+}
+.main__booking_label{
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 8px;
+}
+.main__booking_input{
+    margin-top: 27px;
+}
+.main__booking_name, .main__booking_tel{
+    line-height: 35px;
+    font-size: 16px;
+    width: 240px;
+}
+.main__booking_button{
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+}
+.main__booking_button::before{
+    top: 56px;
+    width: 12px;
+    height: 12px;
+    font-size: 13px;
+    line-height: 13px;
+}
+.main__booking_button::after{
+    top: 56px;
+    font-size: 10px;
+    line-height: 13px;
+    width: 183px;
+    left: 20px;
+}
+/* яндекс-карта */
+.main_map{
+    width: 950px;
+}
+/* подвал/низ сайта */
+.footer{
+    padding: 80px 0;
+}
+.footer_block{
+    width: 800px;
+}
+.footer_logo p{
+    font-size: 13px;
+    max-width: 197px;
+}
+.footer_logo p:not(:first-child){
+    margin-top: 32px;
+}
+.footer_logo :first-child{
+    font-size: 24px;
+}
+.footer_nav a{
+    font-size: 16px;
+}
+.footer_nav li:not(:first-child){
+    margin-top: 12px;
+}
+.footer_mail a{
+    font-size: 16px;
+}
+.footer__mail_media img{
+    height: 15px;
+    width: 15px;
+    margin-bottom: 16px;
+}
+.footer_tel button{
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+}
+.footer_tel a{
+    margin-top: 12px;
+    font-size: 16px;
+    width: 134px;
+}

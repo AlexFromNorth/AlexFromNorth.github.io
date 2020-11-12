@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/documentLogo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles__header.css">
+    <link rel="stylesheet" href="css/styles__main_info.css">
+    <link rel="stylesheet" href="css/styles__main_respons.css">
+    <link rel="stylesheet" href="css/styles__footer.css">
+    <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1330px)" href="css/styles__middle_size.css">
+    <link rel="stylesheet" media="screen and (max-width: 767px)" href="css/styles__mobile_size.css">
+</head>
+<body>
+    <div class="header" id="header">
+        <div class="header__top">
+            <div class="header__top_logo">
+                <div class="header__top_logoMain">MOVEE</div>
+                <span class="header__top_border">
+                    <i></i>
+                </span>
+    <!-- "бургер-меню" -->
+                <div class="header__top_logoMobile"><span></span></div>
+            </div>
+            <nav class="header__top_logoMenu">
+                <ul>
+                  <li><a href="#main__price">Цены</a></li>
+                  <li><a href="#main__autopark">Автопарк</a></li>
+                  <li><a href="#main__respons">Отзывы</a></li>
+                  <li><a href="#main__booking">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header__number">
+                <nav class="header__number_telephone"><a href="tel:88000801213">8(800)-080-12-13</a></nav>
+            </div>
+        </div>
+
+        <div class="header__middle">    
+    <!-- кнопка с телефоном в правом углу  -->
+            <a href="tel:88000801213">
+                <div class="header__middle_block">
+                    <div class="header__middle_button"></div>
+                </div>
+            </a>
+    <!-- две фотографии в хедере -->
+            <div class="header__middle_img"></div>
+            <div class="header__middle_text">    
+                <span class="header__middle_textBold">Квартирные переезды</span>
+                <p>По Москве и области</p>
+            </div>
+            <div class="header__low">    
+                <button class="header__low_button popup__modal">Заказать</button> 
+    <!-- модальное окно -->            
+                <div class="popup__overlay">
+                    <div class="popup">
+                        <a href="#" class="popup__close"><span>+</span></a>
+                        <h2>Здравствуйте!</h2>
+                        <p class="popur__text">Введите свой номер, мы перезвоним в течение минуты!</p>
+                        <form action="" method="post" class="popup__form_row">
+                            <label class="popur__label" for="popup__form_login">Номер:</label>
+                            <input class="popur__input_tel" type="tel" id="popup__form_login" value="" autofocus />
+                            <input class="popur__input_button" type="button" value="Отправить" />
+                        </form>
+                    </div>
+                </div>
+    <!--  уведомление об отправки --> 
+            <div class="message__block">    
+                <div class="message__send">
+                    <span>Отправлено!</span>
+                </div>
+            </div>
+
+                <div class="header__low_Pluses">
+                    <div class="header__argument_one">Более 800 переездов</div>
+                    <div class="header__argument_two">Бережная упаковка</div>
+                    <div class="header__argument_two">Фиксированная цена</div>
+                </div>
+            </div>
+        </div>   
+    </div>    
+
+    <div class="main">
+        <div class="main__how" id="main__how">
+            <label for="main__how">Как это происходит?</label>
+                <div class="main__how_adv">
+                    <div class="main__how_advantage main__arg_one">
+                        <p>Оценка объема предстаящих работ</p>
+                        <p>Стоймость переезда зависит от количества комнат, вещей и мебели.</p>
+                    </div>
+                    <div class="main__how_advantage main__arg_two">
+                        <p>Упаковка вещей</p>
+                        <p>Упаковываем вещи в коробки, подписываем. Габаритное и деликатное, упаковываем отдельно.</p>
+                    </div>
+                </div>
+                <div class="main__how_adv">
+                    <div class="main__how_advantage main__arg_three">
+                        <p>Погрузка и транспортировка вещей</p>
+                        <p>В нашем автопарке имеются машины, подходящие для мебели любых габаритов.</p> 
+                    </div>
+                    <div class="main__how_advantage main__arg_four">
+                        <p>Распаковка и расстановка мебели</p>
+                        <p>Опытные грузчики быстро расставят мебель и уберут мусор от распаковки.</p>
+                    </div>
+                </div>
+        </div> 
+
+        <div class="main__price" id="main__price">
+            <div class="main__price_text" id="main__price_text">
+                <label for="main__price_text">Цены</label>
+                <p>Фиксированная стоймость на переезд под ключ</p>
+            </div>
+            <div class="main__price_block">
+                <div class="main__price_furgon" id="main__price_furgon">
+                    <label for="main__price_furgon">1-комнатная кв-ра</label>
+                    <p>1 фургон</p>
+                    <p>2 грузчика</p>
+                    <p>Переезд за 4 часа</p>
+                    <p> 8 490&#8381;</p>
+                    <button class="main__price_furgonButton popup__modal">Заказать</button>
+                </div>
+                <div class="main__price_gazel" id="main__price_gazel">
+                    <label for="main__price_gazel">2-комнатная кв-ра</label>
+                    <p>1 газель - 3 метра</p>
+                    <p>2 грузчика</p>
+                    <p>Переезд за 4 часа</p>
+                    <p> 10 690&#8381;</p>
+                    <button class="main__price_gazelButton popup__modal">Заказать</button>
+                </div>
+                <div class="main__price_gazelBig" id="main__price_gazelBig">
+                    <label for="main__price_gazelBig">3-комнатная кв-ра</label>
+                    <p>1 газель - 4 метра</p>
+                    <p>2 грузчика</p>
+                    <p>Переезд за 6 часа</p>
+                    <p> 16 490&#8381;</p>
+                    <button class="main__price_gazelBig_button popup__modal">Заказать</button>
+                </div>
+            </div>
+            <div class="main__price_mobileAll"><a href="">Все цены</a></div>
+        </div>
+
+        <div class="main__autopark" id="main__autopark">
+            <div class="main__autopark_text" id="main__autopark_text">
+                <label for="main__autopark_text">Автопарк</label>
+                <p>10 видов автомобилей от 800 кг до 10 тонн</p>
+            </div>
+            <div class="slider">
+                <div class="main__autopark_type">
+                    <div class="main__autopark_typeGazele gazele" onclick="currentSlide(1)">Газели</div>
+                    <div class="main__autopark_typeGazele gazele" onclick="currentSlide(2)">Каблуки</div>
+                    <div class="main__autopark_typeGazele gazele" onclick="currentSlide(3)">Грузовики</div>
+                </div>
+                <div class="main__autopark_typeCar" id="heel">
+                    <div class="main__autopark_carText">
+                        <p>Каблук 2 метра</p>
+                        <ul>
+                            <li>Ширина 1,8м</li>
+                            <li>Высота 1,5м</li>
+                            <li>Объем 6м<sup>3</sup></li>
+                            <li>Грузоподъёмность 800кг</li>
+                        </ul>
+                        <button class="main__avtopark_button popup__modal">Заказать</button>
+                    </div>
+                    <div class="main__autopark_img" alt="Каблук"></div>
+                    <div class="main__avtopark_mobileCaption">Каблук 2 метра / Грузоподъёмность 700кг</div>
+                </div>
+                <div class="main__autopark_typeCar" id="gazelle">
+                    <div class="main__autopark_carText">
+                        <p>Газель 3 метра</p>
+                        <ul>
+                            <li>Ширина 2м</li>
+                            <li>Высота 2м</li>
+                            <li>Объем 12м<sup>3</sup></li>
+                            <li>Грузоподъёмность 1,5т</li>
+                        </ul>
+                        <button class="main__avtopark_button popup__modal">Заказать</button>
+                    </div>
+                    <div class="main__autopark_img" alt="Газель"></div>
+                    <div class="main__avtopark_mobileCaption">Газель 3 метра / Грузоподъёмность 1,5т</div>
+                </div>
+                <div class="main__autopark_typeCar" id="track">
+                    <div class="main__autopark_carText">
+                        <p>Грузовик 5 метров</p>
+                        <ul>
+                            <li>Ширина 2,5м</li>
+                            <li>Высота 3м</li>
+                            <li>Объем 22м<sup>3</sup></li>
+                            <li>Грузоподъёмность 4т</li>
+                        </ul>
+                        <button class="main__avtopark_button popup__modal">Заказать</button>
+                    </div>
+                    <div class="main__autopark_img" alt="Грузовик"></div>
+                    <div class="main__avtopark_mobileCaption">Грузовик 5 метра / Грузоподъёмность 4т</div>
+                </div>
+                <div class="main__autopark_arrow">
+                    <a class="main__autopark_prev" onclick="minusSlide()">&#10094;</a>
+                    <a class="main__autopark_next" onclick="plusSlide()">&#10095;</a> 
+                </div>
+            </div> 
+        </div> 
+
+        <div class="main__respons" id="main__respons">
+            <p class="main__respons_label">Отзывы</p>
+            <div class="main__respons_block">
+                <div>
+                    <p class="main__respons_name">Ирина</p>
+                    <p class="main__respons_data">24.05.2020</p>
+                    <p class="main__respons_text">Обращение к вам за помощью в переезде 
+                        оставило только положительные впечатления. Хотелось 
+                        отметить замечательного водителя газели Алексея. Были 
+                        трудности с заездом во двор, он проявил себя как компетентный 
+                        и профессиональный сотрудник, за что ему огромное...  
+                    </p>
+                    <p><a href="#" class="main__respons_whole">Читать полностью</a></p>
+                </div>
+                <div>
+                    <p class="main__respons_name">Светлана Васильевна</p>
+                    <p class="main__respons_data">15.06.2020</p>
+                    <p class="main__respons_text">Сегодня ( 15.06.2020 ) мы переехали. 
+                        Остались очень довольны, несмотря на то, что к нам опоздали 
+                        на 1,5 часа. Морально были к этому готовы ( в прошлый переезд 
+                        в другой фирме тоже опоздали на час).  Водитель заранее позвонил, 
+                        предупредил, что задерживается. Когда....
+                    </p>
+                    <p><a href="#" class="main__respons_whole">Читать полностью</a></p>
+                </div>
+                <div class="main__respons_block_last">
+                    <p class="main__respons_name">Ольга Петрова</p>
+                    <p class="main__respons_data">20.09.2020</p>
+                    <p class="main__respons_text">Могу на 100% порекомендовать компанию MOVEE 
+                        и отметить, что цены фиксированы, что упрощает расчет. Безо всяких 
+                        заморочек, в отличии от их конкурентов. Упаковали все качественно и 
+                        быстро. Все вещи приехали в сохранности. 
+                        Особая благодарность Александру за его...            
+                    </p>
+                    <p><a href="#" class="main__respons_whole">Читать полностью</a></p>
+                </div>
+            </div>
+            <a href="#"><button class="main__respons_button">Все отзывы</button></a>
+        </div>
+
+        <div class="main__booking" id="main__booking">
+            <p class="main__booking_label">Закажи переезд прямо сейчас</p>
+            <p>Мы перезвоним в течение 30 секунд</p>
+            <form action="" class="main__booking_input">
+                <input type="text" placeholder="Ваше имя" class="main__booking_name">
+                <input type="text" placeholder="Телефон" class="main__booking_tel">
+                <button class="main__booking_button">Перезвонить мне</button>
+            </form>
+        </div>
+        <div class="main_map">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5ccef88a8040d4377a1067a1145a20b5120a936c4ac93d011cd38a15db7f6033&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>        
+        </div> 
+    </div>
+
+    <div class="footer">
+        <div class="footer_block">
+            <div class="footer_logo">
+                <p>MOVEE</p>
+                <p>Политика конфиденциальности</p>
+                <p>Соглашение на обработку персональных данных</p>
+            </div>
+            <nav class="footer_nav">
+                <ul>
+                    <li><a href="#header">Главная</a></li>
+                    <li><a href="#main__price">Цены</a></li>
+                    <li><a href="#main__autopark">Автопарк</a></li>
+                    <li><a href="#main__respons">Отзывы</a></li>
+                    <li><a href="#main__booking">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="footer_mail">
+                <div class="footer__mail_media">
+                    <a href="https://www.youtube.com/"><img src="images/youtube.png" alt="youtube"></a>
+                    <a href="https://vk.com/"><img src="images/vk.png" alt="vk"></a>
+                    <a href="https://ru-ru.facebook.com/"><img src="images/fb.png" alt="fb"></a>
+                    <a href="https://www.instagram.com/"><img src="images/insta.png" alt="instagram"></a>
+                </div>
+                <p><a href="mailto:hello@movee.ru">hello@movee.ru</a></p>
+            </div>
+            <div class="footer_tel">
+                <button class="popup__modal">Обратный звонок</button>
+                <a href="tel:88000801213">8(800)-080-12-13</a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

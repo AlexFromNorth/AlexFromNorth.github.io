@@ -1,0 +1,129 @@
+/* отзывы!!! */
+.main__respons{
+    height: 665px;
+    background: #FED100;
+    padding: 100px;
+    text-align: center;
+}
+.main__respons_label{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 58px;
+}
+.main__respons_block{
+    display: flex;
+    justify-content: space-between;
+    width: 1304px;
+    height: 268px;
+    margin: 0 auto;
+    text-align: start;
+    font-size: 16px;
+    line-height: 21px;
+}
+.main__respons_name{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.main__respons_data{
+    position: relative;
+}
+.main__respons_data::after{
+    position: absolute;
+    content: "★★★★★";
+    color: #FF352B;
+    padding-left: 9.5px; 
+}
+.main__respons_text{
+    margin: 19px 0;
+    display: inline-block;
+    max-width: 420px;
+}
+.main__respons_whole{
+    cursor: pointer;
+    color: black;
+}
+.main__respons_button{
+    font-size: 20px;
+    font-weight: 500;
+    width: 250px;
+    height: 50px;
+    border: 1px solid black;
+    background: #FED100;
+    margin-top: 59px;
+    cursor: pointer;
+}
+/* заказ обратного звонка */
+.main__booking{
+    max-height: 189px;
+    margin: 124px auto;
+    max-width: 1002px;
+    font-size: 16px;
+    line-height: 21px;
+}
+.main__booking_label{
+    font-size: 30px;
+    line-height: 37px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.main__booking_input{
+    margin-top: 34px;
+    display: flex;
+    justify-content: space-between;
+}
+.main__booking_name, .main__booking_tel{
+    border: 0;
+    border-bottom: 1px solid black;
+    outline: none;
+    line-height: 44px;
+    font-size: 20px;
+    font-weight: 500;
+    width: 300px;
+    cursor: text;
+}
+.main__booking_button{
+    width: 250px;
+    height: 50px;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    background: #FF352B;
+    border: none;
+    box-shadow: 8px 8px 0 0 white,
+                8px 8px 0 2px #FED100;
+    cursor: pointer;
+    position: relative;
+}
+.main__booking_button::before{
+    position: absolute;
+    content: "✔";
+    top: 70px;
+    width: 15px;
+    height: 15px;
+    color: black;
+    font-size: 16px;
+    line-height: 16px;
+    border: 1px solid black;
+    left: 0;
+}
+.main__booking_button::after{
+    position: absolute;
+    content: "Даю согласие на обработку данных";
+    top: 70px;
+    color: black;
+    font-size: 12px;
+    line-height: 16px;
+    width: 229px;
+    left: 25px;
+}
+/* yandex map */
+.main_map{
+    margin: 0 auto;
+    height: 450px;
+}
+@media screen and (min-width: 1331px) {
+    .main_map{
+        width: 1200px;
+    }
+}

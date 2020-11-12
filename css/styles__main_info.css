@@ -1,0 +1,312 @@
+/* Второй блок */
+.main__how{
+    max-width: 1106px;
+    max-height: 342px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 105px;
+}
+.main__how label{
+    line-height: 37px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.main__how_adv{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.main__how_advantage{
+    max-width: 390px;
+    text-align: start;
+    margin-left: 100px;
+    position: relative;
+}
+.main__how_advantage :first-child{
+    margin-bottom: 15px;
+    line-height: 24px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.main__how_advantage :last-child{
+    line-height: 21px;
+    font-size: 16px;
+}
+.main__how_adv .main__arg_one :first-child::before, .main__how_adv .main__arg_one :first-child::after{
+    position: absolute;
+    content: "01";
+    line-height: 61px;
+    font-size: 50px;
+    font-weight: 300;
+    left: -98px;
+    color: #FED100;
+    top: -7px;
+}
+.main__how_adv .main__arg_one :first-child::after{
+    content: "01";
+    color: black;
+    left: -100px;
+}
+.main__how_adv .main__arg_two :first-child::before, .main__how_adv .main__arg_two :first-child::after{
+    position: absolute;
+    content: "02";
+    line-height: 61px;
+    font-size: 50px;
+    font-weight: 300;
+    left: -98px;
+    color: #FED100;
+    top: -7px;
+}
+.main__how_adv .main__arg_two :first-child::after{
+    left: -100px;
+    color: black;
+    content: "02";
+}
+.main__how_adv .main__arg_three :first-child::before, .main__how_adv .main__arg_three :first-child::after{
+    position: absolute;
+    content: "03";
+    line-height: 61px;
+    font-size: 50px;
+    font-weight: 300;
+    left: -98px;
+    color: #FED100;
+    top: -7px;
+}
+.main__how_adv .main__arg_three :first-child::after{
+    left: -100px;
+    color: black;
+    content: "03";
+}
+.main__how_adv .main__arg_four :first-child::before, .main__how_adv .main__arg_four :first-child::after{
+    position: absolute;
+    content: "04";
+    line-height: 61px;
+    font-size: 50px;
+    font-weight: 300;
+    left: -98px;
+    color: #FED100;
+    top: -7px;
+}
+.main__how_adv .main__arg_four :first-child::after{
+    left: -100px;
+    color: black;
+    content: "04";
+}
+/* 3й блок с ценнами на прайс */
+.main__price{
+    max-width: 1305px;
+    margin: 0 auto;
+    text-align: center;
+}
+.main__price_text label{
+    font-weight: 600;
+    line-height: 34px;
+    font-size: 30px;
+}
+.main__price_text p{
+    margin: 15px 0 60px;
+    font-weight: 600;
+    line-height: 29px;
+    font-size: 24px;
+}
+.main__price_block{
+    display: flex;
+    justify-content: space-between;
+}
+/* внутренние дивы */
+.main__price_block div{
+    width: 420px;
+    padding: 80px 0;
+    border: 1px solid #EBEBEB;
+}
+.main__price_block  :hover{
+    border: 1px solid #FED100;
+}
+.main__price_block  div :hover{
+    border: none;
+}
+/* содержимое внутренних дивов */
+.main__price_block  label{
+    line-height: 29px;
+    font-weight: 600;
+    font-size: 24px;
+}
+.main__price_block  p{
+    line-height: 24px;
+    font-size: 16px;
+}
+.main__price_block div :nth-child(2){
+    margin: 61px 0 25px;
+}
+.main__price_block div :nth-child(4){
+    margin: 25px 0 64px;
+}
+.main__price_block div :nth-child(5){
+    line-height: 37px;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 54px;
+}
+.main__price_furgonButton, .main__price_gazelButton, .main__price_gazelBig_button{
+    line-height: 25px;
+    font-size: 20px;
+    font-weight: 500;
+    background: #FED100;
+    border: none;
+    max-width: 250px;
+    height: 50px;
+    cursor: pointer;
+}
+.main__price_mobileAll a{
+    display: none;
+}
+/* автопарк */
+.main__autopark{
+    max-width: 1005px;
+    margin: 102px auto 52px;
+}
+.main__autopark_img{
+    background: url(../images/gazelle.png) no-repeat;
+    height: 453px;
+    width: 641px;
+    margin-top: -35%;
+    margin-left: 35%;
+    background-size: contain;
+}
+.main__autopark_text{
+    text-align: center;
+}
+.main__autopark_text label{
+    font-weight: 600;
+    line-height: 37px;
+    font-size: 30px;
+}
+.main__autopark_text p{
+    font-weight: 600;
+    line-height: 29px;
+    font-size: 24px;
+    margin: 15px 0 60px;
+}
+.main__autopark_type{
+    display: flex;
+    text-align: center;
+    width: 640px;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: 500;
+    justify-content: space-between;
+}
+.main__autopark_type div{
+    font-weight: 500;
+    line-height: 50px;
+    font-size: 20px;
+    width: 201px;
+    height: 50px;
+    cursor: pointer;
+}
+.main__autopark_typeCar{
+    display: flex;
+    justify-content: space-between;
+}
+.main__autopark_carText p{
+    font-weight: 600;
+    line-height: 29px;
+    font-size: 24px;
+    margin: 110px 0 37px;
+}
+.main__autopark_carText ul{
+    list-style: none;
+    margin-bottom: 35px;
+}
+.main__autopark_carText ul > li{
+    padding-left: 29px;
+    position: relative;
+    line-height: 21px;
+    font-size: 16px;
+    margin: 28px 0;
+}
+.main__autopark_carText ul > li:before{
+    content: '✔';
+    position: absolute; 
+    top: 0; 
+    left: 0;
+}
+.main__avtopark_button{
+    background: #FED100;
+    width: 250px;
+    height: 50px;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.main__avtopark_mobileCaption{
+    display: none;
+}
+/* слайдер */
+.slider{
+    position: relative;
+    margin: auto;
+}
+/* Кнопки вперед и назад */
+.slider .main__autopark_prev, .slider .main__autopark_next {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    z-index: 100;
+}
+.slider .main__autopark_next {
+    right: -70px;
+    border-radius: 3px 0 0 3px;
+    position: absolute;
+    z-index: 1000;
+}
+.slider .main__autopark_prev {
+    left: -70px;
+}
+/* При наведении на кнопки добавляем фон */
+.slider .main__autopark_prev:hover,
+.slider .main__autopark_next:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.main__autopark_typeGazele{
+    transition: background-color 0.6s ease;
+}
+.active,
+.main__autopark_typeGazele:hover {
+    background-color: #ddd;
+}
+/* Анимация слайдов */
+.slider .main__autopark_typeCar {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}

@@ -1,0 +1,466 @@
+/* хедер-первый блок */
+.header{
+    height: 599px;
+}
+.header__middle, .header__top{
+    width: none;
+}
+.header__top{
+    padding: 0px;
+}
+.header__top_logo{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 29px 15px 16px;
+}
+.header__top_logoMain{
+    font-weight: 600;
+    line-height: 19px;
+    font-size: 16px;
+}
+.header__top_logoMobile{
+    width: 44px;
+    height: 22px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+.header__top_logoMobile span{
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease 0s;
+}
+.header__top_logoMobile.burger__active span{
+    height: 0px;
+}
+.header__top_logoMobile::before, .header__top_logoMobile::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    left: 0px;
+    transition: all 0.3s ease 0s;
+}
+.header__top_logoMobile::before{
+    top: 0px;
+}
+.header__top_logoMobile::after{
+    bottom: 0px;
+}
+.header__top_logoMobile.burger__active::before{
+    transform: rotate(45deg);
+    top: 10px;
+}
+.header__top_logoMobile.burger__active::after{
+    transform: rotate(-45deg);
+    bottom: 10px;
+}
+.header__number, .header__middle_block, .header__middle_img, .header__low_Pluses{
+    display: none;
+}
+.header__top_logoMenu{
+    position: fixed;
+    top: -100%;
+}
+.header__top_logoMenu.burger__active{
+    position: absolute;
+}
+.header__top_logoMenu ul{
+    display: flex;
+    flex-direction: column;
+}
+.header__top_logoMenu a{
+    line-height: 50px;
+    font-size: 16px;
+    z-index: 101;
+    left: -180%;
+    position: absolute;
+}
+.header__top_logoMenu.burger__active {
+    top: 100px;
+    right: -22px;
+}
+.header__middle_text{
+    margin-top: 0px;
+    margin: 0 auto;
+    max-width: 210px;
+    text-align: center;
+}
+.header__middle_text p {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    margin-top: 5px;
+}
+.header__middle_textBold{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 37px;
+}
+.header__low{
+    margin-top: 333px;
+    position: relative;
+    display: flex;
+    margin-left: 6%;
+    justify-content: center;
+}
+.header__low::before{
+    background: url(../images/topimg2.png) no-repeat;
+    content: "";
+    position: absolute;
+    height: 361px;
+    width: 248px;
+    background-size: cover;
+    top: -360px;
+    margin: 0 auto;
+    left: 50%;
+    transform: translate(-47%, 0);
+}
+.header__low_button{
+    max-width: 292px;
+    max-height: 60px;
+    font-size: 20px;
+    box-shadow: none;
+}
+/* модальное окно */
+.popur__label{
+    width: 60px;
+}
+.popup__overlay{
+    font-size: 12px;
+    line-height: 12px;
+}
+.popur__input_button{
+    font-size: 11px;
+    line-height: 11px;
+}
+/* Уведомление об отправки */
+.message__send{
+    font-size: 12px;
+}
+/* второй блок-main */
+.main__how label{
+    font-size: 20px;
+    margin: 40px auto 60px;
+}
+.main__how_adv{
+    display: inline-block;
+}
+.main__how_advantage{
+    display: inline-block;
+}
+.main__how_advantage :first-child{
+    line-height: 21px;
+    font-size: 16px;
+    font-weight: 400;
+    width: 210px;
+}
+.main__how_advantage :last-child{
+    display: none;
+}
+.main__how_adv .main__arg_one :first-child::before, .main__how_adv .main__arg_one :first-child::after{
+    left: -88px;
+    top: -7px;
+}
+.main__how_adv .main__arg_one :first-child::after{
+    left: -90px;
+}
+.main__how_adv .main__arg_two :first-child::before, .main__how_adv .main__arg_two :first-child::after{
+    left: -88px;
+    top: -7px;
+}
+.main__how_adv .main__arg_two :first-child::after{
+    left: -90px;
+}
+.main__how_adv .main__arg_three :first-child::before, .main__how_adv .main__arg_three :first-child::after{
+    left: -88px;
+    top: -7px;
+}
+.main__how_adv .main__arg_three :first-child::after{
+    left: -90px;
+}
+.main__how_adv .main__arg_four :first-child::before, .main__how_adv .main__arg_four :first-child::after{
+    left: -88px;
+    top: -7px;
+}
+.main__how_adv .main__arg_four :first-child::after{
+    left: -90px;
+}
+.main__arg_two{
+    margin-top: 45px;
+    margin-bottom: 17px;
+}
+.main__arg_four{
+    margin-top: 45px;
+}
+/* 3й блок с ценнами на прайс */
+.main__price{
+    max-width: 300px;
+    margin-top: 190px;
+}
+.main__price_text label{
+    font-size: 20px;
+}
+.main__price_text p{
+    display: none;
+}
+.main__price_block :first-child, .main__price_block :last-child:not(.main__price_gazelButton){ 
+    display: none;
+}
+/* внутренние дивы */
+.main__price_block div{
+    width: 300px;
+    padding: 0px 0;
+    border: none;
+}
+/* содержимое внутренних дивов */
+.main__price_block  label{
+    font-weight: 500;
+    font-size: 18px;
+}
+.main__price_block  p{
+    font-size: 16px;
+}
+.main__price_block  :hover{
+    border: none;
+}
+.main__price_block div :nth-child(1){
+    margin-top: -30px;
+}
+.main__price_block div :nth-child(2){
+    margin: 24px 0 15px;
+}
+.main__price_block div :nth-child(4){
+    margin: 15px 0 44px;
+}
+.main__price_block div :nth-child(5){
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.main__price_gazel{
+    margin-top: 10px;
+}
+.main__price_furgonButton, .main__price_gazelButton, .main__price_gazelBig_button{
+    font-size: 20px;
+    width: 292px;
+    height: 60px;
+}
+.main__price_mobileAll a{
+    display: inline-block;
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+/* автопарк */
+.main__autopark{
+    max-width: 321px;
+    text-align: center;
+    margin: 0 auto;
+    margin: 102px auto 110px;
+}
+.main__autopark_img{
+    height: 227px;
+    max-width: 316px;
+    background-size: contain;
+    margin-top: 47px;
+    display: block;
+    margin: 20px auto 0;
+}
+.main__autopark_text label{
+    font-size: 20px;
+}
+.main__autopark_text p{
+    display: none;
+}
+.main__autopark_type{
+    max-width: 270px;
+    margin: 20px 24px 0px;
+}
+.main__autopark_type div{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    width: auto;
+    height: 20px;
+}
+.main__autopark_type div:active{
+    font-weight: 500;
+}
+.main__autopark_type div:hover{
+    border: none;
+}
+.main__autopark_typeCar{
+    display: inline-block;
+}
+.main__autopark_carText p, .main__autopark_carText ul{
+    display: none;
+}
+.main__avtopark_button{
+    position: absolute;
+    margin-top: 295px;
+    width: 292px;
+    height: 60px;
+    transform: translate(-50%, 0);
+}
+.main__avtopark_mobileCaption{
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 12px;
+}
+.main__autopark_arrow{
+    display: none;
+}
+/* отзывы!!! */
+.main__respons{
+    height: 574px;
+    padding-top: 40px;
+    padding-left: 0px;
+}
+.main__respons_label{
+    font-size: 20px;
+    margin: 0px 0px 40px;
+    padding-left: 100px;
+}
+.main__respons_block{
+    width: 303px;
+    height: auto;
+    margin: 0 auto;
+    font-size: 16px;
+    padding-left: 30px;
+}
+.main__respons_block :first-child, .main__respons_block :last-child{
+    display: none;
+}
+.main__respons_block div :first-child, .main__respons_block div :last-child{
+    display: inline-block;
+}
+.main__respons_name{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    padding-left: 0px;
+}
+.main__respons_data{
+    position: relative;
+    font-size: 16px;
+    padding-left: 0px;
+}
+.main__respons_text{
+    margin: 37px 0px 15px 0px ;
+    max-width: 270px;
+    font-size: 16px;
+}
+.main__respons_button{
+    font-size: 20px;
+    font-weight: 500;
+    width: 262px;
+    height: 60px;
+    margin: 45px 0 48px 20px;
+}
+/* заказ обратного звонка */
+.main__booking{
+    max-height: 518px;
+    margin: 62px auto 71px;
+    max-width: 320px;
+    text-align: center;
+    font-size: 15px;
+}
+.main__booking_label{
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin: 0 auto;
+    max-width: 222px;
+}
+.main__booking_input{
+    margin-top: 34px;
+    display: inline-block
+}
+.main__booking_name, .main__booking_tel{
+    font-size: 16px;
+    font-weight: 500;
+    max-width: 290px;
+}
+.main__booking_tel{
+    margin-top: 26px;
+    margin-bottom: 60px;
+}
+.main__booking_button{
+    width: 289px;
+    height: 60px;
+    box-shadow: none;
+}
+.main__booking_button::before{
+    top: 75px;
+    width: 15px;
+    height: 15px;
+    font-size: 12px;
+}
+.main__booking_button::after{
+    top: 75px;
+    font-size: 12px;
+    width: 229px;
+    left: 25px;
+}
+/* яндекс-карта */
+.main_map{
+    width: 80%;
+}
+/* подвал */
+.footer{
+    padding-top: 60px;
+    width: 100%;
+    text-align: center;
+    height: 570px;
+}
+.footer_block{
+    display: inline-block;
+    max-width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 252px;
+}
+.footer_logo p{
+    font-size: 16px;
+    max-width: 238px;
+}
+.footer_logo p:not(:first-child){
+    margin-top: 0px;
+}
+.footer_logo :first-child{
+    margin-bottom: 36px;
+}
+.footer_logo p:last-child{
+    margin: 18px 0 46px;
+}
+.footer_nav ul{
+    width: 100%;
+}
+.footer_nav a{
+    text-align: center;
+}
+.footer_nav li:not(:first-child){
+    margin-top: 15px;
+}
+.footer__mail_media{
+    margin-top: 46px;
+    width: 95%;
+}
+.footer_tel{
+    display: none;
+}
+.footer_mail p{
+    margin-top: 30px;
+}
+.footer_mail p :hover {
+    border-bottom: none;
+}
